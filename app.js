@@ -15,7 +15,7 @@ const dataretrival = (urlLink, callback) => {
     request({ url: urlLink.url, headers: urlLink.headers, json: true }, (error, response) => {
         if (error) {
             callback(error)
-        } else {
+        }  else {
             // data array is for storing the data specific conditions
             let data = [], stargazersData = [];
 
@@ -48,7 +48,6 @@ const dataretrival = (urlLink, callback) => {
 }
 
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-// creating csvWriting object 
 const csvWriting = createCsvWriter({
     path: './Data.csv',
     header: [
