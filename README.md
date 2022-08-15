@@ -3,19 +3,26 @@
 <ul><li>Fetch GitHub repository data using following API
 https://api.github.com/search/repositories?q=is:public</li></ul>
 <ul><li>Use following filters which are defined in dictionary to fetch only limited relevant
-repositories</li></ul>
-<code>
+repositories</li>
+
+```bash
 {
-"language": "Python",
-"forks": ">=200"
+  "language": "Python",
+  "forks": ">=200"
 }
-</code>
+```
 <ul><li>Store fetched repositories data into following columns in CSV file
 name, description, html_url, watchers_count, stargazers_count, forks_count</li></ul>
 <ul><li>Store only those repositories which have more than 2000 “stargazers_count”</li></ul>
 
 # Project Setup
 Clone this repo and run below command to install all the dependencies.<br>
-<code>npm install</code><br>
+
+```bash
+  npm install
+```
 Run the below command after cloning repo in terminal<br>
-<code>node app.js</code>
+
+```bash
+  node app.js
+```
